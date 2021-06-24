@@ -4,8 +4,8 @@ session_start();
 require_once 'db_connector.php';
 
 if ($connection) {
-    $attemptedLoginName = $_POST['login-name'];
-    $attemptedPassword = $_POST['login-password'];
+    $attemptedLoginName = addslashes($_POST['login-name']);
+    $attemptedPassword =  addslashes($_POST['login-password']);
     
     //echo "Connected to " . $dbname . " as " . $username;
     //echo "<br> login name: " . $attemptedLoginName . "<br>" . $attemptedPassword . "<br>";

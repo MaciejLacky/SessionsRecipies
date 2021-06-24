@@ -30,7 +30,10 @@ if ( $_SESSION['username']) {
                 break; 
                 case 5:
                     require_once 'ShowUserAdminPage.php';
-                    break;        
+                    break;  
+                    case 6:
+                        require_once 'ShowCommentsAdminPage.php';
+                        break;      
               
                
     } 

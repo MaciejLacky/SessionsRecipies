@@ -24,6 +24,7 @@ if (!isset($_SESSION['username'])):
 <?php if($_SESSION["role"] == "admin"): ?>
 | <span class="menu-item"><a href="index.php?pageNumber=4">AdminPage</a></span>
 | <span class="menu-item"><a href="index.php?pageNumber=5">UserAdminPage</a></span>
+| <span class="menu-item"><a href="index.php?pageNumber=6">CommentsAdminPage</a></span>
 
 <?php endif; ?>
 
